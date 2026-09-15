@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT XI</title>
+    <style>
+        /* Reset dasar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Desain latar belakang dan tata letak tengah */
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container utama */
+        .container {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        /* Group tombol (Flexbox) */
+        .button-group {
+            display: flex;
+            flex-direction: column; /* Menumpuk secara vertikal di layar kecil */
+            gap: 15px; /* Jarak antartombol */
+        }
+
+        /* Desain umum tombol */
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efek hover (saat kursor di atas tombol) */
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Warna masing-masing tombol */
+        .btn-google {
+            background-color: #4285F4;
+        }
+        .btn-google:hover {
+            background-color: #3367d6;
+        }
+
+        .btn-youtube {
+            background-color: #FF0000;
+        }
+        .btn-youtube:hover {
+            background-color: #cc0000;
+        }
+
+        .btn-github {
+            background-color: #24292e;
+        }
+        .btn-github:hover {
+            background-color: #1b1e21;
+        }
+        @media (min-width: 600px) {
+            .container {
+                max-width: 700px;
+                padding: 50px;
+            }
+            .button-group {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .btn {
+                flex: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>PENGAWAS UJIAN PRAKTIK - ICT XI</h1>
+        <h3>MIDTERM TEST OF 1st SEMESTER - ACADEMIC YEAR OF 2026/2027</h3></br>
+        <div class="button-group">
+            <a href="https://drive.google.com/file/d/1arCs0ieDTWNM7gJo2oejYJOfBOvxuTuP/view?usp=sharing" target="_blank" class="btn btn-google">Panduan Pengawas</a>
+            <a href="https://docs.google.com/spreadsheets/d/1E_IF964tKOOy5LgM3wThS11gRHl-NtilZ0GlR3KqFmQ/edit?usp=sharing" target="_blank" class="btn btn-youtube">Rekap Jawaban Siswa</a>
+        </div>
+    </div>
+
+</body>
+</html>
